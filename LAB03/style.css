@@ -1,0 +1,47 @@
+  
+h1 { color: rgb(231, 23, 9);
+    font-size: 30px;
+    background-color: rgba(128, 128, 128, 0.205);
+ }
+div>h1{
+    color:rgba(25, 131, 173, 0.747);
+}
+#skills{
+     color :black;
+    /* font-size:16px; */
+    font-weight:bold;
+}
+
+p{
+    font-size:1.5em;
+    font-family:Arial;
+}
+div ul{
+    font-weight:bold;
+}
+a:visited{
+    color:purplr;
+}
+.heading {
+    color:sky;
+
+}
+img[title] {
+  border: 5px solid rgba(4, 0, 255, 0.527);
+}
+
+img[title~="north"] {
+  border: 5px solid rgba(0, 255, 42, 0.897);
+}
+a[href^="https:"]{
+    color: green;
+}
+a:hover{
+    background-color: aqua;
+}
+p:first-letter{
+font-size:21px;
+}
+main>ul{
+    font-size:19px;
+}
