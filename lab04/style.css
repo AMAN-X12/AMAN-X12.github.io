@@ -1,0 +1,95 @@
+/* Root Variables */
+:root {
+    --main-color: rgb(231, 23, 9);
+    --secondary-color: rgba(25, 131, 173, 0.747);
+    --font-family: 'Arial', sans-serif;
+    --border-color: rgba(128, 128, 128, 0.205);
+    --padding-size: 8px;
+    --margin-size: 10px;
+}
+
+/* General body settings with inheritance */
+body {
+    font-family: var(--font-family);
+    margin: var(--margin-size);
+    padding: var(--padding-size);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Headings */
+h1 {
+    color: var(--main-color);
+    font-size: 30px;
+    background-color: var(--border-color);
+    border-bottom: 2px solid gray;
+    padding: var(--padding-size);
+}
+
+div > h1 {
+    color: var(--secondary-color);
+}
+
+/* Skills list */
+#skills {
+    color: black;
+    font-weight: bold;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+/* Paragraph */
+p {
+    font-size: 1.2em;
+    font-family: inherit; /* inheritance applied */
+    padding: 5px;
+    border-left: 3px solid var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+/* Links */
+a:visited {
+    color: purple;
+}
+
+a[href^="https:"] {
+    color: green;
+}
+
+a:hover {
+    background-color: aqua;
+}
+
+/* Course List */
+.heading {
+    color: skyblue;
+    border: 1px dashed gray;
+    padding: 4px;
+}
+
+/* Image styling */
+img[title] {
+    border: 5px solid rgba(4, 0, 255, 0.527);
+    margin: 5px;
+}
+
+img[title~="north"] {
+    border: 5px solid rgba(0, 255, 42, 0.897);
+}
+
+/* Box model and layout */
+ul {
+    margin: var(--margin-size);
+    padding-left: 20px;
+}
+
+main > ul {
+    font-size: 19px;
+}
+
+/* Pseudo-element */
+p:first-letter {
+    font-size: 21px;
+    font-weight: bold;
+}
